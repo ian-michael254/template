@@ -18,17 +18,17 @@ const Navbar = () => {
     <div className="absolute top-0 left-0 w-full z-10">
       <div className='container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent'>
         {/*Logo */}
-        <img className='w-28 h-28' src={assets.logo} alt="" />
+        <img  src={assets.logo} alt="" />
 
         {/*Menu Items */}
-        <ul className='hidden md:flex gap-7 text-green-200'>
-            <a href="#Header" className='cursor-pointer hover:text-red-500'>Home</a>
-             <a href="#About" className='cursor-pointer hover:text-red-500'>About</a>
-              <a href="#Projects" className='cursor-pointer hover:text-red-500'>Projects</a>
-               <a href="#Testimonials" className='cursor-pointer hover:text-red-500'>Testimonials</a>
+        <ul className='hidden md:flex gap-7 text-slate-800'>
+            <a href="#Header" className='cursor-pointer hover:text-amber-600'>Home</a>
+             <a href="#About" className='cursor-pointer hover:text-amber-600'>About</a>
+              <a href="#Projects" className='cursor-pointer hover:text-amber-600'>Projects</a>
+               <a href="#Testimonials" className='cursor-pointer hover:text-amber-600'>Testimonials</a>
 
         </ul>
-        <button className='hidden md:block bg-amber-300 px-8 py-2 rounded-full'>Sign Up</button>
+        <button className='hidden md:block bg-amber-400 px-8 py-2 rounded-full cursor-pointer hover:transition-all ease-in-out hover:bg-slate-800 hover:text-slate-300'>Sign Up</button>
         <img onClick={() => setShowMobileMenu(true)} src={assets.menu_icon_open} className='md:hidden w-7 cursor-pointer' alt="" />
       </div>
       {/*Mobile Menu */}

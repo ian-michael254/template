@@ -35,11 +35,11 @@ const Projects = () => {
 
         {/*Slider Buttons */}
         <div className="flex justify-end items-center mb-8">
-            <button onClick={prevProject} className='p-3 bg-yellow-200 rounded mr-2 cursor-pointer' aria-label='Previous Project'>
-                <img src={assets.arrow_right} alt="previous" />
+            <button onClick={prevProject} className='p-3 bg-slate-200 rounded mr-2 cursor-pointer' aria-label='Previous Project'>
+                <img src={assets.arrow_left} alt="previous" />
             </button>
-            <button onClick={nextProject} className='p-3 bg-blue-200 rounded mr-2 cursor-pointer' aria-label='Next Project'>
-                <img src={assets.arrow_right} alt="Next" />
+            <button onClick={nextProject} className='p-3 bg-slate-200 rounded mr-2 cursor-pointer' aria-label='Next Project'>
+                <img  src={assets.arrow_right} alt="Next" />
             </button>
         </div>
         {/*Project Slider container */}
@@ -49,12 +49,13 @@ const Projects = () => {
             style={{transform: `translateX(-${(currentIndex *100)/cardsToShow}%)`}}
             >
                 {projectsData.map((project, index)=> (
-                    <div className='relative flex-shrink-0 w-full sm:w-1/4' key ={index}>
-                        <img className="w-full h-auto mb-14" src={project.image} alt={project.title} />
-                        <div className='absolute left-0 right-0 bottom-5 flex justify-center'>
-                            <div className="inline-block bg-white w-3/4 px-4 py-2 shadow-md">
-                            <h2 className='text-xl font-semibold text-gray-800'>{project.title}</h2>
-                            <p className='text-grey-500 text-sm'>{project.price} <span className='px-1'>|</span>{project.location}</p>
+                    <div className='relative shrink-0 w-full h-96 bg-slate-900 opacity-80 sm:w-1/4 cursor-pointer hover:opacity-100' key ={index}>
+                        <img className="w-full h-full object-cover mb-14" src={project.image} alt={project.title} />
+                        <div className='absolute left-0 right-0 bottom-5 flex justify-center '>
+                            <div className="inline-block bg-slate-100 w-3/4 px-4 py-2 shadow-md ">
+                            <h2 className='text-xl text-center font-semibold text-gray-800'>{project.title}</h2>
+                           
+                            <p className='text-grey-500 text-sm text-center mt-4'>{project.price} <span className='px-1 text-red-600'>|</span><span className='text-green-600'>{project.status}</span></p>
 
                             </div>
 
