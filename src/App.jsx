@@ -1,12 +1,29 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
+import Header from './components/Header';
+import About from './components/About';
+import Projects from './components/Projects';
+import Testimonials from './components/Testimonials';
+import Contact from './components/Contact'
+import Footer from './components/Footer';
+
+
 
 
 const App = () => {
   return (
-    <div className='text-4xl text-center bg-violet-200'>
-      <i className="bi bi-battery-full text-red-500"></i>
-    </div>
+  <div className='w-full overflow-hidden'>
+    
+     <Header />
+     <About />
+     <Projects />
+     <Testimonials />
+     <Contact />
+     <Footer />
+
+  </div>
+     
+    
   )
 }
 
