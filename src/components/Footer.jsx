@@ -24,7 +24,7 @@ const Footer = () => {
                <h3 className="text-lg font-bold mb-4">Subscribe to our newsletter</h3>
                <p className="mb-4 max-w-80">The latest news, articles, and resources sent to your inbox weekly</p>
                <div className="flex gap-2">
-                <input type="email" name="Email" placeholder="Enter your email" className="p-2 rounded bg-gray-200 text-blue-400 border border-slate-300 focus:outline-none w-full md:w-auto" />
+                <input type="email" name="Email" placeholder="Enter your email" className="p-2 rounded bg-gray-200 text-gray-500 border border-slate-300 focus:outline-none w-full md:w-auto" />
                 <button className='py-2 px-4 rounded bg-slate-800 text-white'>Subscribe</button>
                </div>
 
